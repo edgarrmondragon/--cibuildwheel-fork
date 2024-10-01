@@ -44,7 +44,7 @@ jobs:
       run: nox --force-color -s update_proj -- --auth=${{ secrets.GITHUB_TOKEN }}
 
     - name: Create Pull Request
-      if: github.ref == 'refs/heads/main' && github.repository == 'pypa/cibuildwheel'
+      # if: github.ref == 'refs/heads/main' && github.repository == 'pypa/cibuildwheel'
       uses: peter-evans/create-pull-request@v7
       with:
         commit-message: Update dependencies
