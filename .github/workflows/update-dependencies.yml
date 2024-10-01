@@ -47,6 +47,7 @@ jobs:
       # if: github.ref == 'refs/heads/main' && github.repository == 'pypa/cibuildwheel'
       uses: peter-evans/create-pull-request@v7
       with:
+        token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: Update dependencies
         title: '[Bot] Update dependencies'
         body: |
