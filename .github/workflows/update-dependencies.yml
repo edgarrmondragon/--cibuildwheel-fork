@@ -58,3 +58,4 @@ jobs:
         # token: ${{ steps.generate-token.outputs.token }}
         token: ${{ secrets.GITHUB_TOKEN }}
         delete-branch: true
+        base: main
